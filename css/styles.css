@@ -25,6 +25,15 @@
          url('../fonts/raleway-v19-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/raleway-v19-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+  /* raleway-600 - latin */
+@font-face {
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/raleway-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/raleway-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
   /* montserrat-regular - latin */
 @font-face {
     font-family: 'Montserrat';
@@ -52,3 +61,268 @@
          url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/montserrat-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	background-color: #FFFFFF;
+}
+
+  /* Header */
+
+.container {
+     width: 100%;
+	max-width: 117rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.main-header{
+     color: #333333;
+}
+
+.main-header .container {
+     display: flex;
+     align-items: center;
+}
+
+/* styles.css | http://127.0.0.1:5500/css/styles.css?_cacheOverride=1617825697117 */
+
+.logo-ubiquity {
+     margin: 3.5rem 1.8rem;
+}
+.logo{
+     margin: 2rem 0;
+}
+
+.logo p{
+     color: #707070;
+     font-size: 1.4rem;
+}
+
+.logo h2{
+     font-family:'Raleway', sans-serif;
+     font-weight: bold;
+     font-size: 2rem;
+}
+
+/* Navigation */
+
+.menu{
+     display: flex;
+     
+}
+
+.main-nav{
+     margin: auto;
+     
+}
+
+.menu-item{
+     margin-right: 2rem;
+     
+}
+
+.menu-link{
+     padding: 1rem;
+     text-decoration: none;
+     color: #333;
+     font-weight: 700;
+     font-size: 1.4rem;
+     transition: .3s;
+}
+
+.menu-link:hover,
+.menu-link:focus{
+     background-color: #F16822;
+     color: #FFF;
+     outline: 0;
+}
+
+/* Hero */
+
+.hero{
+     color: #333333;
+     background-image: url(../img/slider1.jpg);
+     background-size: cover;
+     background-position: center;
+     min-height: 80vh;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+     display: flex;
+     align-items: center;
+}
+   
+@media (min-resolution: 144dpi){
+     .hero{
+          background-image: url(../img/slider1@2x.jpg);
+     }
+}
+
+.hero p{
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+h1{
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 6.4rem;
+     color: #F16822;
+     text-align: center;
+}
+
+h1 .baseline{
+     font-size: 3.2rem;
+     line-height: 1;
+}
+
+.hero .container{
+     padding: auto;
+}
+
+/* Services */
+
+.services .container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+.services h2, .services .baseline{
+     grid-column: 1/-1;
+     text-align: center;
+}
+
+.services h2{
+     font-size: 4.8rem;
+     font-weight: 700;
+     font-family: 'Raleway', sans-serif;
+}
+
+figure img{
+     margin: auto;
+}
+
+.service-img{
+     width: 100px;
+     height: 100px;
+     background-color: #EEE;
+     border-radius: 50%;
+     padding: 2.5rem;
+     margin: auto;
+}
+
+.services-card{
+     text-align: center;
+}
+
+.services{
+     margin: 10rem;
+}
+
+.services .baseline{
+     margin: 10rem;
+     font-size: 24px;
+}
+
+.services-card h3{
+     font-family: 'Raleway', sans-serif;
+     font-weight: bold;
+     font-size: 2.4rem;
+     margin: 2rem;
+}
+
+/* C'est quoi Ubiquity (Spoiler: personne ne sait)*/
+
+.what-ubiquity{
+     background-image: url(../img/bokehback.jpg);
+     background-size: cover;
+     background-position: center; 
+     width: 100%;
+     min-height: 90vh;
+     position: relative;
+}
+@media (min-resolution: 144dpi){
+     .what-ubiquity{
+          background-image: url(../img/bokehback@2x.jpg);
+     }
+}
+
+.what-ubiquity-img{
+     position: relative;
+     bottom: 0;
+     margin: auto;
+}
+
+.what-ubiquity h2{
+     color: #F16822;
+     text-align: center;
+}
+
+.what-ubiquity p{
+     color: #EEE;
+     text-align: center;
+}
+
+/* Latest Post */
+
+.latest-post{
+     margin: 3rem;
+}
+
+.latest-post .container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+.latest-post h2, .latest-post .baseline{
+     grid-column: 1/-1;
+     text-align: center;
+}
+
+.latest-post-card{
+     background: #FFF;
+     box-shadow: 0px 3px 6px #00000029;
+     opacity: 1;
+     padding: 2rem;
+     margin: 5rem 2rem;
+}
+
+.latest-post-card-img{
+     
+}
+
+.latest-post h2{
+     font-size: 4.8rem;
+     font-weight: 700;
+     font-family: 'Raleway', sans-serif;
+}
+
+.latest-post .baseline{
+     margin: 10rem;
+     font-size: 2.4rem;
+}
+
+.latest-post h3, .latest-post p{
+     text-align: center;
+}
+
+.latest-post h3{
+     color: #F16822;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
+     font-size: 4rem;
+     padding-top: 7.3rem;
+     padding-bottom: 2.5rem;
+}
+
+.latest-post-card p{
+     font-size: 1.6rem;
+     line-height: 1.5;
+     margin-bottom: 4.5rem;
+}

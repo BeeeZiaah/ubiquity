@@ -1,249 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ubiquity</title>
-		<link rel="stylesheet" src="reset.css" />
-		<link rel="stylesheet" src="styles.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<hearder class="main-header">
-			<img src="" alt="Le logo de Ubiquity" />
-			<div class="logo">
-				<p>Ubiquity</p>
-				<p>Professional Web UI</p>
+		<header class="main-header">
+			<div class="container">
+				<img class ="logo-ubiquity" src="img/logo.svg" alt="Le logo de Ubiquity" />
+				<div class="logo">
+					<h2>Ubiquity</h2>
+					<p>Professional Web UI</p>
+				</div>
+				<nav class="main-nav">
+					<ul class="menu">
+						<li class="menu-item"><a href="#" class="menu-link" >Home</a></li>
+						<li class="menu-item"><a href="#" class="menu-link" >About</a></li>
+						<li class="menu-item"><a href="#" class="menu-link" >Portfolio</a></li>
+						<li class="menu-item"><a href="#" class="menu-link" >Blog</a></li>
+						<li class="menu-item"><a href="#" class="menu-link" >Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="main nav">
-				<ul class="menu">
-					<li class="menu-item"><a href="#"></a>Home</li>
-					<li class="menu-item"><a href="#"></a>About</li>
-					<li class="menu-item"><a href="#"></a>Portfolio</li>
-					<li class="menu-item"><a href="#"></a>Blog</li>
-					<li class="menu-item"><a href="#"></a>Contact</li>
-				</ul>
-			</nav>
-		</hearder>
+		</header>
 		<section class="hero">
-			<h1>At Ubiquity, We care</h1>
-			<p class="baseline">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-				laudantium voluptatem tenetur id, asperiores illo distinctio
-				necessitatibus sit repellat tempora est quibusdam vitae, natus
-				voluptas veniam temporibus dolor labore praesentium.
-			</p>
+			<div class="container">
+				<h1>At Ubiquity, We care</h1>
+				<p class="baseline">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+					laudantium voluptatem tenetur id, asperiores illo distinctio
+					necessitatibus sit repellat tempora est quibusdam vitae,
+					natus voluptas veniam temporibus dolor labore praesentium.
+				</p>
+			</div>
 		</section>
 		<section class="services">
-			<h2>Our Services</h2>
-			<p class="baseline">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Distinctio magni atque, iusto voluptatibus possimus voluptas
-				architecto minima sunt eligendi, quisquam optio exercitationem
-				repellendus totam voluptates praesentium perferendis saepe vitae
-				perspiciatis?
-			</p>
-			<article class="services-card">
-				<h3>Consultation</h3>
-				<p>
+			<div class="container">
+				<h2>Our Services</h2>
+				<p class="baseline">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Quos, officiis magni. Amet accusantium iure molestiae
-					deserunt nihil autem, blanditiis ipsa explicabo neque quae
-					quis, beatae quisquam impedit, incidunt vel aspernatur!
+					Distinctio magni atque, iusto voluptatibus possimus voluptas
+					architecto minima sunt eligendi, quisquam optio
+					exercitationem repellendus totam voluptates praesentium
+					perferendis saepe vitae perspiciatis?
 				</p>
-			</article>
-			<article class="services-card">
-				<h3>Blogging</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Atque magni libero aut expedita dolor omnis obcaecati
-					assumenda nulla ullam earum doloribus at nobis, nesciunt
-					voluptatem dolorum? Quaerat est optio exercitationem?
-				</p>
-			</article>
-			<article class="services-card">
-				<h3>Social Media</h3>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Sint nam beatae, deserunt, nihil esse quibusdam
-					exercitationem similique iste magnam ex odio obcaecati ea
-					quia assumenda quae laboriosam asperiores minus facere?
-				</p>
-			</article>
-			<article class="services-card">
-				<h3>SEO</h3>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Dolores enim commodi accusantium magnam ratione dolore,
-					veniam sunt asperiores molestias? Minus quasi quisquam
-					labore modi provident? Soluta expedita incidunt molestias
-					commodi?
-				</p>
-			</article>
+				<article class="services-card">
+					<figure class="service-img"><img src="img/briefcase.svg" alt="" aria-hidden="true"></figure>
+					<h3>Consultation</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Quos, officiis magni. Amet accusantium iure molestiae
+						deserunt nihil autem, blanditiis ipsa explicabo neque
+						quae quis, beatae quisquam impedit, incidunt vel
+						aspernatur!
+					</p>
+				</article>
+				<article class="services-card">
+					<figure class="service-img"><img src="img/notes.svg" alt="" aria-hidden="true"></figure>
+					<h3>Blogging</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Atque magni libero aut expedita dolor omnis obcaecati
+						assumenda nulla ullam earum doloribus at nobis, nesciunt
+						voluptatem dolorum? Quaerat est optio exercitationem?
+					</p>
+				</article>
+				<article class="services-card">
+					<figure class="service-img"><img src="img/star.svg" alt="" aria-hidden="true"></figure>
+					<h3>Social Media</h3>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Sint nam beatae, deserunt, nihil esse quibusdam
+						exercitationem similique iste magnam ex odio obcaecati
+						ea quia assumenda quae laboriosam asperiores minus
+						facere?
+					</p>
+				</article>
+				<article class="services-card">
+					<figure class="service-img"><img src="img/bolt.svg" alt="" aria-hidden="true"></figure>
+					<h3>SEO</h3>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Dolores enim commodi accusantium magnam ratione
+						dolore, veniam sunt asperiores molestias? Minus quasi
+						quisquam labore modi provident? Soluta expedita incidunt
+						molestias commodi?
+					</p>
+				</article>
+			</div>
 		</section>
 		<section class="what-ubiquity">
-			<h2>What is Ubiquity</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-				tempore facere voluptatibus esse veritatis? Atque tempore
-				doloribus voluptates iure voluptatem sunt natus vero velit!
-				Tempora praesentium ducimus quis dignissimos ab?
-			</p>
+			<div class="container">
+			<img src="img/browser-mockup.png" class="what-ubiquity-img">
+				<h2>What is Ubiquity</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Fugiat tempore facere voluptatibus esse veritatis? Atque
+					tempore doloribus voluptates iure voluptatem sunt natus vero
+					velit! Tempora praesentium ducimus quis dignissimos ab?
+				</p>
+			</div>
 		</section>
 		<section class="latest-post">
-			<h2>Latest Posts</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Voluptas, esse vero ad maxime, reprehenderit dicta porro eveniet
-				dolores optio eos assumenda obcaecati provident odio repellat
-				unde quas illo vel saepe.
-			</p>
-			<article class="latest-post-card">
-				<h2>Blog Title</h2>
-				<p>
+			<div class="container">
+				<h2>Latest Posts</h2>
+				<p class="baseline">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
+					Voluptas, esse vero ad maxime, reprehenderit dicta porro
+					eveniet dolores optio eos assumenda obcaecati provident odio
+					repellat unde quas illo vel saepe.
 				</p>
-			</article>
-			<article class="latest-post-card">
-				<h2>Title of the Blog</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
-				</p>
-			</article>
-			<article class="latest-post-card">
-				<h2>Title of the Blog</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
-				</p>
-			</article>
-			<article class="latest-post-card">
-				<h2>Blog Title</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
-				</p>
-			</article>
-			<article class="latest-post-card">
-				<h2>Blog Title</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
-				</p>
-			</article>
-			<article class="latest-post-card">
-				<h2>Blog Title</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestiae omnis quae error, aspernatur dolorem provident
-					perspiciatis nulla quod at similique sapiente aliquid unde
-					quis maxime ex incidunt dicta molestias ipsum!
-				</p>
-			</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/bureau-latest-post.jpg" alt="" aria-hidden="true"></figure>
+					<h3>Blog Title</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/phone-and-computer.png" alt="" aria-hidden="true"></figure>
+					<h3>Title of the Blog</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/writing-latest-post.jpg" alt="" aria-hidden="true"></figure>
+					<h3>Title of the Blog</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/reunion-latest-post.jpg" alt="" aria-hidden="true"></figure>
+					<h3>Blog Title</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/computer-latest-post.jpg" alt="" aria-hidden="true"></figure>
+					<h3>Blog Title</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+				<article class="latest-post-card">
+					<figure class="latest-post-card-img"><img src="img/bureau-latest-post.jpg" alt="" aria-hidden="true"></figure>
+					<h3>Blog Title</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste perspiciatis voluptatibus iusto accusantium esse.
+					</p>
+				</article>
+			</div>
 		</section>
 		<section class="facts">
-			<h2>Fun Facts</h2>
-			<div class="facts-number">
-				<p>5</p>
-			</div>
-			<div class="facts-text">
-				<p>People</p>
-			</div>
-			<div class="facts-number">
-				<p>243</p>
-			</div>
-			<div class="facts-text">
-				<p>Pageviews</p>
-			</div>
-			<div class="facts-number">
-				<p>23</p>
-			</div>
-			<div class="facts-text">
-				<p>Coffees</p>
-			</div>
-			<div class="facts-number">
-				<p>600</p>
-			</div>
-			<div class="facts-text">
-				<p>Hours</p>
-			</div>
-			<div class="facts-number">
-				<p>40</p>
-			</div>
-			<div class="facts-text">
-				<p>Days</p>
-			</div>
-			<div class="facts-number">
-				<p>17</p>
-			</div>
-			<div class="facts-text">
-				<p>Websites</p>
+			<div class="container">
+				<h2>Fun Facts</h2>
+				<div class="facts-number">
+					<p>5</p>
+				</div>
+				<div class="facts-text">
+					<p>People</p>
+				</div>
+				<div class="facts-number">
+					<p>243</p>
+				</div>
+				<div class="facts-text">
+					<p>Pageviews</p>
+				</div>
+				<div class="facts-number">
+					<p>23</p>
+				</div>
+				<div class="facts-text">
+					<p>Coffees</p>
+				</div>
+				<div class="facts-number">
+					<p>600</p>
+				</div>
+				<div class="facts-text">
+					<p>Hours</p>
+				</div>
+				<div class="facts-number">
+					<p>40</p>
+				</div>
+				<div class="facts-text">
+					<p>Days</p>
+				</div>
+				<div class="facts-number">
+					<p>17</p>
+				</div>
+				<div class="facts-text">
+					<p>Websites</p>
+				</div>
 			</div>
 		</section>
 		<section class="team">
-			<h2>Amanda Sigfriend</h2>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-				Possimus fuga exercitationem commodi, tenetur deleniti vel
-				facere illum mollitia inventore, enim eius asperiores voluptatum
-				rerum ad quos obcaecati, vitae voluptates delectus.
-			</p>
+			<div class="container">
+				<h2>Amanda Sigfriend</h2>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Possimus fuga exercitationem commodi, tenetur deleniti vel
+					facere illum mollitia inventore, enim eius asperiores
+					voluptatum rerum ad quos obcaecati, vitae voluptates
+					delectus.
+				</p>
+			</div>
 		</section>
 		<footer class="contact">
-			<div class="contact-global">
-				<h2 class="recent-post">Recent Post</h2>
-				<ul>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-				</ul>
-				<h2 class="recent-comments">Recent Comments</h2>
-				<ul>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor</li>
-				</ul>
-				<h2 class="tags">Tags</h2>
-				<ul class="tags-button">
-					<li><a href="#">Insider</a></li>
-					<li><a href="#">Check</a></li>
-					<li><a href="#">Demo</a></li>
-					<li><a href="#">Office</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Post</a></li>
-					<li><a href="#">Management</a></li>
-				</ul>
-				<h2 class="ubiquity-adress">Ubiquity</h2>
-				<ul>
-					<li>2499 Bee Street, Bear Lake Michigan 49614</li>
-					<li>231 - 864 - 8100</li>
-					<li>
-						<a href="mailto:Hello@domainame.com"
-							>Hello@domainame.com</a>
-					</li>
-				</ul>
-			</div>
-			<div class="copyright">
-				<p class="copyright-text">
-					© 2019 Ubiquity .All Rights Reserved.
-				</p>
-				<div class="icons-social"></div>
+			<div class="container">
+				<div class="contact-global">
+					<h2 class="recent-post">Recent Post</h2>
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+					</ul>
+					<h2 class="recent-comments">Recent Comments</h2>
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor</li>
+					</ul>
+					<h2 class="tags">Tags</h2>
+					<ul class="tags-button">
+						<li><a href="#">Insider</a></li>
+						<li><a href="#">Check</a></li>
+						<li><a href="#">Demo</a></li>
+						<li><a href="#">Office</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Post</a></li>
+						<li><a href="#">Management</a></li>
+					</ul>
+					<h2 class="ubiquity-adress">Ubiquity</h2>
+					<ul>
+						<li>2499 Bee Street, Bear Lake Michigan 49614</li>
+						<li>231 - 864 - 8100</li>
+						<li>
+							<a href="mailto:Hello@domainame.com"
+								>Hello@domainame.com</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<p class="copyright-text">
+						© 2019 Ubiquity .All Rights Reserved.
+					</p>
+					<div class="icons-social"></div>
+				</div>
 			</div>
 		</footer>
 	</body>

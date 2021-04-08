@@ -90,8 +90,6 @@ body {
      align-items: center;
 }
 
-/* styles.css | http://127.0.0.1:5500/css/styles.css?_cacheOverride=1617825697117 */
-
 .logo-ubiquity {
      margin: 3.5rem 1.8rem;
 }
@@ -191,6 +189,7 @@ h1 .baseline{
 .services .container{
      display: grid;
      grid-template-columns: repeat(4, 1fr);
+     gap: 3rem;
 }
 
 .services h2, .services .baseline{
@@ -209,12 +208,12 @@ figure img{
 }
 
 .service-img{
-     width: 100px;
-     height: 100px;
+     width: 10rem;
+     height: 10rem;
      background-color: #EEE;
      border-radius: 50%;
-     padding: 2.5rem;
      margin: auto;
+     display: flex;
 }
 
 .services-card{
@@ -222,12 +221,13 @@ figure img{
 }
 
 .services{
-     margin: 10rem;
+     margin-top: 17rem;
 }
 
 .services .baseline{
-     margin: 10rem;
-     font-size: 24px;
+     margin-top: 5.4rem;
+     margin-bottom:5.4rem;
+     font-size: 2.4rem;
 }
 
 .services-card h3{
@@ -235,6 +235,12 @@ figure img{
      font-weight: bold;
      font-size: 2.4rem;
      margin: 2rem;
+}
+
+.services-card p{
+     font-size: 1.6rem;
+     line-height: 1.5;
+     margin-bottom: 17rem;
 }
 
 /* C'est quoi Ubiquity (Spoiler: personne ne sait)*/
@@ -245,7 +251,6 @@ figure img{
      background-position: center; 
      width: 100%;
      min-height: 90vh;
-     position: relative;
 }
 @media (min-resolution: 144dpi){
      .what-ubiquity{
@@ -254,9 +259,7 @@ figure img{
 }
 
 .what-ubiquity-img{
-     position: relative;
-     bottom: 0;
-     margin: auto;
+     margin-bottom: 0;
 }
 
 .what-ubiquity h2{
@@ -272,12 +275,15 @@ figure img{
 /* Latest Post */
 
 .latest-post{
-     margin: 3rem;
+     margin-top: 17rem;
 }
 
-.latest-post .container{
+.grid-latest-post{
      display: grid;
+     margin-bottom: 20rem;
      grid-template-columns: repeat(3, 1fr);
+     row-gap: 10rem;
+     column-gap: 4rem;
 }
 
 .latest-post h2, .latest-post .baseline{
@@ -289,12 +295,10 @@ figure img{
      background: #FFF;
      box-shadow: 0px 3px 6px #00000029;
      opacity: 1;
-     padding: 2rem;
-     margin: 5rem 2rem;
 }
 
 .latest-post-card-img{
-     
+     padding: 2rem;
 }
 
 .latest-post h2{
@@ -304,8 +308,9 @@ figure img{
 }
 
 .latest-post .baseline{
-     margin: 10rem;
+     margin-top: 5.4rem;
      font-size: 2.4rem;
+     margin-bottom: 11.5rem;
 }
 
 .latest-post h3, .latest-post p{
@@ -325,4 +330,143 @@ figure img{
      font-size: 1.6rem;
      line-height: 1.5;
      margin-bottom: 4.5rem;
+}
+
+/* Fun Facts */
+
+.facts{
+     background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)), url("../img/background-fun-facts.jpg");
+     background-size: cover;
+     background-position: center; 
+     width: 100%;
+     min-height: 90vh;
+}
+
+.facts .container {
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+}
+   
+.facts h2 {
+     grid-column: 1/-1;
+     text-align: center;
+     margin-bottom: 8.3rem;
+     margin-top: 17rem;
+}
+   
+.facts-number {
+     grid-row: 2/7;
+     text-align: center;
+     margin-bottom: 2.3rem;
+     font-weight: 700;
+     color: #F16822;
+     font-size: 6.4rem;
+}
+
+.facts-text{
+     text-align: center;
+     margin-bottom: 17rem;
+}
+
+/* Bonjour Amanda */
+
+.team{
+     background-image: url(../img/rect.jpg);
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     min-height: 50vh;
+}
+
+.team .container{
+     display: flex;
+     align-items: center;
+}
+
+.team-img{
+     border-radius: 50%;
+     width: 22rem;
+     height: 22rem;
+     margin-top: 17rem;
+     margin-bottom: 21rem;
+     margin-right: 5rem;
+}
+
+.team-info{
+     text-align: left;
+}
+
+.team-info h2{
+     margin-bottom: 2.4rem;
+     color: #fff;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     line-height: 1.4;
+}
+
+.team-info p{
+     color: #EEE;
+
+}
+
+/* Contact */
+
+.contact{
+     background-color: #333;
+     padding-bottom: 3.4rem;
+}
+
+.contact-global{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     justify-self: normal;
+     column-gap: 8rem;
+     row-gap: 2rem;
+     border-bottom: 1px solid #FFF;
+}
+
+.contact-global h2{
+     grid-row: 1/-1;
+     font-weight: 700;
+     font-family: 'Raleway', sans-serif;
+     color:#F16822;
+     text-align: left;
+     margin-top: 11rem;
+     text-transform: uppercase;
+}
+
+.recent-list li{
+     font-size: 2rem;
+     color: #CCC;
+     list-style-image: url(../img/angle-double-right.svg);
+}
+
+.adress, .number-phone{
+     color: #CCC;
+}
+
+.adress{
+     list-style-image: url(../img/map-marker.svg);
+}
+
+.number-phone{
+     list-style-image: url(../img/phone.svg);
+}
+
+.email{
+     list-style-image: url(../img/envelope.svg);
+}
+
+.contact-global a{
+     text-decoration: none;
+     color: #CCC
+}
+
+.tags-button{
+     list-style-type: none;
+}
+
+.copyright-text{
+     color: #CCC;
+     margin-top: 3.5rem;
 }

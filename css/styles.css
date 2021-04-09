@@ -7,6 +7,15 @@
          url('../fonts/raleway-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/raleway-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+  /* raleway-600 - latin */
+@font-face {
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/raleway-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/raleway-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
   /* raleway-700 - latin */
   @font-face {
     font-family: 'Raleway';
@@ -25,15 +34,6 @@
          url('../fonts/raleway-v19-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/raleway-v19-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* raleway-600 - latin */
-@font-face {
-     font-family: 'Raleway';
-     font-style: normal;
-     font-weight: 600;
-     src: local(''),
-          url('../fonts/raleway-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/raleway-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-   }
   /* montserrat-regular - latin */
 @font-face {
     font-family: 'Montserrat';
@@ -74,7 +74,7 @@ body {
 
 .container {
      width: 100%;
-	max-width: 117rem;
+	max-width: 131rem;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 1.5rem;
@@ -88,6 +88,7 @@ body {
 .main-header .container {
      display: flex;
      align-items: center;
+     justify-content: space-between;
 }
 
 .logo-ubiquity {
@@ -112,12 +113,11 @@ body {
 
 .menu{
      display: flex;
-     
+     justify-content: space-between;
 }
 
 .main-nav{
      margin: auto;
-     
 }
 
 .menu-item{
@@ -203,7 +203,7 @@ h1 .baseline{
      font-family: 'Raleway', sans-serif;
 }
 
-figure img{
+.service-img img{
      margin: auto;
 }
 
@@ -251,7 +251,9 @@ figure img{
      background-position: center; 
      width: 100%;
      min-height: 90vh;
+     position: relative;
 }
+
 @media (min-resolution: 144dpi){
      .what-ubiquity{
           background-image: url(../img/bokehback@2x.jpg);
@@ -259,17 +261,24 @@ figure img{
 }
 
 .what-ubiquity-img{
-     margin-bottom: 0;
+     margin: 0 auto;
 }
 
 .what-ubiquity h2{
      color: #F16822;
      text-align: center;
+     padding-top: 17rem;
+     padding-bottom: 5.4rem;
+     font-size: 4.8rem;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
 }
+
 
 .what-ubiquity p{
      color: #EEE;
      text-align: center;
+     padding-bottom: 55.3rem;
 }
 
 /* Latest Post */
@@ -378,6 +387,12 @@ figure img{
      min-height: 50vh;
 }
 
+@media (min-resolution: 144dpi){
+     .team{
+          background-image: url(../img/rect@2x.jpg);
+     }
+}
+
 .team .container{
      display: flex;
      align-items: center;
@@ -406,7 +421,6 @@ figure img{
 
 .team-info p{
      color: #EEE;
-
 }
 
 /* Contact */
@@ -420,7 +434,6 @@ figure img{
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      justify-self: normal;
-     column-gap: 8rem;
      row-gap: 2rem;
      border-bottom: 1px solid #FFF;
 }
@@ -435,31 +448,42 @@ figure img{
      text-transform: uppercase;
 }
 
+.tags-button{
+     background-color: #444;
+     border: transparent;
+     font-weight: 600;
+     line-height: 1;
+     font-size: 1.2rem;
+     text-transform: uppercase;
+     margin: .12rem;
+}
+
+.tags-button a{
+     margin: 0.5rem 1.2rem;
+}
+
 .recent-list li{
      font-size: 2rem;
      color: #CCC;
-     list-style-image: url(../img/angle-double-right.svg);
+}
+
+.recent-list-link::before{
+     content:"";
+     display: inline-flex;
+     width: 1rem;
+     height: 0.8rem;
+     background-image: url(../img/angle-double-right.svg);
+     margin-right: 1rem;
 }
 
 .adress, .number-phone{
      color: #CCC;
 }
 
-.adress{
-     list-style-image: url(../img/map-marker.svg);
-}
-
-.number-phone{
-     list-style-image: url(../img/phone.svg);
-}
-
-.email{
-     list-style-image: url(../img/envelope.svg);
-}
-
 .contact-global a{
      text-decoration: none;
-     color: #CCC
+     color: #CCC;
+     line-height: 2;
 }
 
 .tags-button{
@@ -469,4 +493,31 @@ figure img{
 .copyright-text{
      color: #CCC;
      margin-top: 3.5rem;
+}
+
+.adress::before{
+     content:"";
+     display: inline-flex;
+     width: 2.1rem;
+     height: 2.6rem;
+     background-image: url(../img/map-marker.svg);
+     margin-right: 1rem;
+}
+
+.number-phone::before{
+     content:"";
+     display: inline-flex;
+     width: 2.4rem;
+     height: 2.4rem;
+     background-image: url(../img/phone.svg);
+     margin-right: 1rem;
+}
+
+.email::before{
+     content:"";
+     display: inline-flex;
+     width: 2.5rem;
+     height: 2rem;
+     background-image: url(../img/envelope.svg);
+     margin-right: 1rem;
 }

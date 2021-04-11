@@ -65,21 +65,68 @@ body {
 
 .container {
      width: 100%;
-	max-width: 128rem;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
 
+@media screen and (min-width: 36em) {
+     .container{
+          max-width: 54.6rem;
+     }
+}
+
+@media screen and (min-width: 48em) {
+     .container{
+          max-width: 73.8rem;
+     }
+}
+
+@media screen and (min-width: 62em) {
+     .container{
+          max-width: 96.2rem
+     }
+}
+
+@media screen and (min-width: 75em) {
+     .container{
+	     max-width: 128rem;
+     }
+}
+
 .container-baseline{
      width: 100%;
-     max-width: 107.8rem;
      margin-left: auto;
      margin-right: auto;
      padding-left: 1.5rem;
      padding-right: 1.5rem;
 }
+
+@media screen and (min-width: 36em) {
+     .container-baseline{
+          max-width: 54.6rem;
+     }
+}
+
+@media screen and (min-width: 48em) {
+     .container-baseline{
+          max-width: 73.8rem;
+     }
+}
+
+@media screen and (min-width: 62em) {
+     .container-baseline{
+          max-width: 96.2rem
+     }
+}
+
+@media screen and (min-width: 75em) {
+     .container-baseline{
+          max-width: 107.8rem;
+     }
+}
+
 .main-header{
      color: #333333;
 }
@@ -190,8 +237,25 @@ h1 .baseline{
 
 .services .container{
      display: grid;
-     grid-template-columns: repeat(4, 1fr);
+     grid-template-columns: repeat(1, 1fr);
      gap: 3rem;
+}
+
+@media screen and (min-width: 36em) {
+     .services .container{
+          grid-template-columns: repeat(2, 1fr);
+     }
+     
+}
+@media screen and (min-width: 62rem) {
+     .services .container{
+          grid-template-columns: repeat(4, 1fr);
+     }
+}
+
+.services{
+     margin-top: 17rem;
+     margin-bottom: 17rem;
 }
 
 .services h2, .services .baseline{
@@ -222,9 +286,6 @@ h1 .baseline{
      text-align: center;
 }
 
-.services{
-     margin-top: 17rem;
-}
 
 .services .baseline{
      margin-top: 5.4rem;
@@ -242,7 +303,6 @@ h1 .baseline{
 .services-card p{
      font-size: 1.6rem;
      line-height: 1.5;
-     margin-bottom: 17rem;
 }
 
 /* C'est quoi Ubiquity (Spoiler: personne ne sait)*/
@@ -293,9 +353,20 @@ h1 .baseline{
 .grid-latest-post{
      display: grid;
      margin-bottom: 20rem;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(1, 1fr);
      row-gap: 10rem;
      column-gap: 4rem;
+}
+
+@media screen and (min-width: 36em) {
+     .grid-latest-post{
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media screen and (min-width: 62em) {
+     .grid-latest-post{
+          grid-template-columns: repeat(3, 1fr);
+     }
 }
 
 .latest-post h2, .latest-post .baseline{
@@ -311,6 +382,10 @@ h1 .baseline{
 
 .latest-post-card-img{
      padding: 2rem;
+}
+
+.latest-post-card-img img{
+     margin: auto;
 }
 
 .latest-post h2{
@@ -351,12 +426,17 @@ h1 .baseline{
      background-size: cover;
      background-position: center; 
      width: 100%;
-     min-height: 90vh;
+     min-height: 50vh;
+     padding-bottom: 20rem;
 }
 
 .facts .container {
      display: grid;
      grid-template-columns: repeat(6, 1fr);
+}
+
+@media screen and (min-width: 62em) {
+    
 }
    
 .facts h2 {
@@ -377,7 +457,6 @@ h1 .baseline{
 
 .facts-text{
      text-align: center;
-     margin-bottom: 17rem;
 }
 
 /* Bonjour Amanda */
@@ -399,23 +478,20 @@ h1 .baseline{
 .team .container{
      display: flex;
      align-items: center;
+     flex-direction: column;
+     padding-top: 17rem;
+     padding-bottom: 21rem;
 }
 
 .team-img{
      border-radius: 50%;
      width: 22rem;
      height: 22rem;
-     margin-top: 17rem;
-     margin-bottom: 21rem;
-     margin-right: 5rem;
-}
-
-.team-info{
-     text-align: left;
 }
 
 .team-info h2{
      margin-bottom: 2.4rem;
+     margin-top: 2.4rem;
      color: #fff;
      font-family: 'Raleway', sans-serif;
      font-weight: 700;
@@ -426,6 +502,27 @@ h1 .baseline{
      color: #EEE;
 }
 
+.team-info{
+     text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+     .team .container{
+          flex-direction: row;
+     }
+
+     .team-info{
+          text-align: left;
+     }
+
+     .team-img{
+          margin-right: 5rem;
+     }
+     
+     .team-info h2{
+          margin-top: 0rem;
+     }
+}
 /* Contact */
 
 .contact{
@@ -435,7 +532,7 @@ h1 .baseline{
 
 .contact-global{
      display: grid;
-     grid-template-columns: repeat(4, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      justify-self: normal;
      row-gap: 2rem;
      border-bottom: 1px solid #FFF;
@@ -452,6 +549,12 @@ h1 .baseline{
      margin-top: 11rem;
      text-transform: uppercase;
 }
+
+@media screen and (min-width: 75em) {
+     .contact-global{
+          grid-template-columns: repeat(4, 1fr);
+     }
+} /* Couille avec le GRID*/
 
 .tags-button{
      background-color: #444;

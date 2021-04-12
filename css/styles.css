@@ -179,8 +179,9 @@ body {
 
 /* Navigation */
 
-[hiden]{
-     display: none;
+[hidden]{
+     display: block;
+     visibility: hidden;
 }
 
 .main-nav{
@@ -192,14 +193,25 @@ body {
 .menu{
      position: absolute;
      top: 100%;
+     z-index: 10;
      background-color: #FFF;
      left: 0;
      right: 0;
+     transform: translateX(-100%);
+	transition: transform .5s ease-in-out, visibility .001s .5s;
 } 
 
+
+.menu:not([hidden]) {
+	transform: translateX(0);
+     transition: visibility .001s, transform .5s .001s ease-in-out;
+}
+
 .toggle-menu{
-     background-color: transparent;
-     border: 0
+     background: url(../img/burger-menu.svg);
+     width: 3rem;
+     height: 3rem;
+     border: 0;
 }
 
 .menu-item{
@@ -233,6 +245,8 @@ body {
           position: relative;   
           display: flex;
           justify-content: space-between;
+		visibility: visible;
+		transform: translateX(0);
      }
      .menu-item{
           margin-right: 2rem;
@@ -258,10 +272,10 @@ body {
      position: relative;
 }
 
-.hero-arrow-left, 
-.hero-arrow-right{
-     display: none;
+.arrow-link{
+     visibility: hidden;
 }
+
 
 @media (min-resolution: 144dpi){
      .hero{
@@ -277,6 +291,13 @@ body {
      }
 }
 @media screen and (min-width: 62em) {
+     .arrow-link{
+          visibility: visible;
+     }
+     .arrow-link:focus, 
+     .arrow-link:hover{
+          outline: 2rem solid black;
+     }
      .hero-arrow-left{
           display: block;
           position: absolute;
@@ -291,15 +312,6 @@ body {
           top:50%;
           transform: translate(0, -50%)
      }
-
-     a .hero-arrow-left:focus,
-     a .hero-arrow-right:focus{
-          outline: 2px solid #333;
-     }
-}
-
-.hero p{
-     text-align: center;
 }
 
 h1{
@@ -314,6 +326,7 @@ h1{
 h1 .baseline{
      font-size: 3.2rem;
      line-height: 1;
+     text-align: center;
 }
 
 @media screen and (min-width: 48em) {
@@ -342,7 +355,6 @@ h1 .baseline{
      .services .container{
           grid-template-columns: repeat(2, 1fr);
      }
-     
 }
 @media screen and (min-width: 62rem) {
      .services .container{
@@ -355,6 +367,12 @@ h1 .baseline{
      margin-bottom: 17rem;
 }
 
+.services .baseline{
+     margin-top: 5.4rem;
+     margin-bottom:5.4rem;
+     font-size: 2.4rem;
+}
+
 .services h2, .services .baseline{
      grid-column: 1/-1;
      text-align: center;
@@ -364,6 +382,12 @@ h1 .baseline{
      font-size: 4.8rem;
      font-weight: 700;
      font-family: 'Raleway', sans-serif;
+}
+
+.services .baseline{
+     margin-top: 5.4rem;
+     margin-bottom:5.4rem;
+     font-size: 2.4rem;
 }
 
 .service-img img{
@@ -381,13 +405,6 @@ h1 .baseline{
 
 .services-card{
      text-align: center;
-}
-
-
-.services .baseline{
-     margin-top: 5.4rem;
-     margin-bottom:5.4rem;
-     font-size: 2.4rem;
 }
 
 .services-card h3{
@@ -507,10 +524,6 @@ h1 .baseline{
      margin-bottom: 11.5rem;
 }
 
-.latest-post h3, .latest-post p{
-     text-align: center;
-}
-
 .latest-post h3{
      color: #F16822;
      font-family: 'Raleway', sans-serif;
@@ -519,12 +532,14 @@ h1 .baseline{
      padding-top: 7.3rem;
      padding-bottom: 2.5rem;
      margin: auto;
+     text-align: center;
 }
 
 .latest-post-card p{
      font-size: 1.6rem;
      line-height: 1.5;
      margin-bottom: 4.5rem;
+     text-align: center;
 }
 
 /* Fun Facts */
@@ -786,3 +801,7 @@ h1 .baseline{
      }
      
 }
+
+/* A parler du changement de couleur sur le focus
+et également le focus sur les images en terme
+d'accesibilité/*

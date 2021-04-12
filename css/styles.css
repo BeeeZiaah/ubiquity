@@ -61,6 +61,11 @@ body {
 	background-color: #FFFFFF;
 }
 
+:focus{
+     outline: .2rem solid #F16822;
+}
+
+
   /* Header */
 
 .container {
@@ -248,7 +253,16 @@ body {
      padding-top: 20rem;
      padding-bottom: 16rem;
 }
-   
+
+.hero .container{
+     position: relative;
+}
+
+.hero-arrow-left, 
+.hero-arrow-right{
+     display: none;
+}
+
 @media (min-resolution: 144dpi){
      .hero{
           background-image: url(../img/slider1@2x.jpg);
@@ -260,6 +274,27 @@ body {
           margin-top: 0rem;
           padding-top: 40rem;
           padding-bottom: 32rem;
+     }
+}
+@media screen and (min-width: 62em) {
+     .hero-arrow-left{
+          display: block;
+          position: absolute;
+          top:50%;
+          transform: translate(0, -50%)
+     }
+     
+     .hero-arrow-right{
+          display: block;
+          position: absolute;
+          right:0;
+          top:50%;
+          transform: translate(0, -50%)
+     }
+
+     a .hero-arrow-left:focus,
+     a .hero-arrow-right:focus{
+          outline: 2px solid #333;
      }
 }
 
@@ -420,6 +455,11 @@ h1 .baseline{
      column-gap: 4rem;
 }
 
+.grid-latest-post a {
+     text-decoration: none;
+     color: #333
+}
+
 @media screen and (min-width: 36em) {
      .grid-latest-post{
           grid-template-columns: repeat(2, 1fr);
@@ -440,6 +480,11 @@ h1 .baseline{
      background: #FFF;
      box-shadow: 0px 3px 6px #00000029;
      opacity: 1;
+     display: flex;
+     flex-direction: column;
+}
+.latest-post-card:hover{
+     border: 2px solid transparent;
 }
 
 .latest-post-card-img{
@@ -473,6 +518,7 @@ h1 .baseline{
      font-size: 4rem;
      padding-top: 7.3rem;
      padding-bottom: 2.5rem;
+     margin: auto;
 }
 
 .latest-post-card p{
@@ -645,13 +691,10 @@ h1 .baseline{
      line-height: 1;
      font-size: 1.2rem;
      text-transform: uppercase;
-     margin: .12rem;
+     margin: .21rem;
      list-style-type: none;
-     padding: .5rem 1.2rem
-}
-
-.tags-button a{
-     margin: 0.5rem 1.2rem;
+     padding: .5rem 1.2rem;
+     color: #CCC;
 }
 
 .recent-list li{

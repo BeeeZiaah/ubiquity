@@ -106,6 +106,7 @@ body {
      margin-right: auto;
      padding-left: 1.5rem;
      padding-right: 1.5rem;
+     text-align: center;
 }
 
 @media screen and (min-width: 36em) {
@@ -272,7 +273,8 @@ body {
      position: relative;
 }
 
-.arrow-link{
+.button-arrow-left,
+.button-arrow-right{
      visibility: hidden;
 }
 
@@ -289,15 +291,25 @@ body {
           padding-top: 40rem;
           padding-bottom: 32rem;
      }
-}
-@media screen and (min-width: 62em) {
-     .arrow-link{
+     .button-arrow-left{
+          display: block;
+          top: 30%;
+          position: absolute;
+          background: transparent;
+          border: 0;
           visibility: visible;
      }
-     .arrow-link:focus, 
-     .arrow-link:hover{
-          outline: 2rem solid black;
+     .button-arrow-right{
+          display: block;
+          top: 30%;
+          right: 1.5rem;
+          border: 0;
+          background: transparent;
+          position: absolute;
+          visibility: visible;
      }
+}
+@media screen and (min-width: 62em) {
      .hero-arrow-left{
           display: block;
           position: absolute;
@@ -669,7 +681,7 @@ h1 .baseline{
      text-align: center;
 }
 
-.contact-global h2{
+.contact-global h3{
      grid-row: 1/-1;
      font-weight: 700;
      font-family: 'Raleway', sans-serif;
@@ -694,7 +706,7 @@ h1 .baseline{
           gap: 0rem;
      }
 
-     .contact-global h2{
+     .contact-global h3{
           text-align: left;
      }
 } 
@@ -710,6 +722,13 @@ h1 .baseline{
      list-style-type: none;
      padding: .5rem 1.2rem;
      color: #CCC;
+}
+
+.tags-button:hover,
+.tags-button:focus{
+     background-color: #fff;
+     color: #F16822;
+
 }
 
 .recent-list li{
@@ -739,6 +758,11 @@ h1 .baseline{
 .contact-global a{
      text-decoration: none;
      color: #CCC;
+}
+
+.contact-global a:focus, 
+.contact-global a:hover{
+     color:#F16822;
 }
 
 .adress::before{
@@ -801,7 +825,3 @@ h1 .baseline{
      }
      
 }
-
-/* A parler du changement de couleur sur le focus
-et également le focus sur les images en terme
-d'accesibilité/*
